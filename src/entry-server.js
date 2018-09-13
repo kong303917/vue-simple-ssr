@@ -19,6 +19,19 @@ export default context => {
           code: 404
         });
       }
+
+      // Promise.all(
+      //   matchedComponents.map((component: any) => {
+      //     if (component.asyncData) {
+      //       return component.asyncData({
+      //         store,
+      //         route: router.currentRoute
+      //       });
+      //     }
+      //   })
+      // ).then(() => {
+      //   context.state = store.state;
+      // });
       // Promise 应该 resolve 应用程序实例，以便它可以渲染
       resolve(app);
     }, reject);
